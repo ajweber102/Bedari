@@ -1,7 +1,97 @@
-<div>
-    <div>
-        <div>
-            aaaaaa
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <!-- Add the slick-theme.css if you want default styling  -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling  -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+</head>
+
+<div class="siteContainer">
+    <div class="header">
+        <img class="logo" src="assets/images/Bedari_Logo_R_Black.png"></img>
+    </div>
+    <div class="bodyContainer">
+        <div class="bodyLeft">
+            <img class="imageMain" src="assets\images\Garangani.jpg"></img>
+            <!-- <div data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                <div class="slide1"><h3>1</h3></div>
+                <div class="slide2"><h3>2</h3></div>
+                <div class="slide3"><h3>3</h3></div>
+            </div> -->
+        </div>
+        <div class="bodyRight">
+            <h1 class="bodyTitle">There Is A Universal Need For People To Connect More Deeply With Themselves, Their Community And With Nature.</h1>
+            <div class="bodyText">The Bedari Foundation strives to instill the mindfulness necessary to help solve health and wellness issues such as addiction, 
+                depression and trauma, community displacement issues such as refugees and displaced persons and environmental issues such as 
+                depletion of species, global warming and over-consumption.
+            </div>
+            <div class="bodyText">The Foundation champions and encourages a philosophy of interconnected well-being and invests in and supports programs that 
+                further these ideals through action and education.
+            </div>
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js">
+
+$(".slider").slick({
+ 
+ // normal options...
+ infinite: false,
+
+ // the magic
+ responsive: [{
+
+     breakpoint: 1024,
+     settings: {
+       slidesToShow: 3,
+       infinite: true
+     }
+
+   }, {
+
+     breakpoint: 600,
+     settings: {
+       slidesToShow: 2,
+       dots: true
+     }
+
+   }, {
+
+     breakpoint: 600,
+     settings: {
+       slidesToShow: 1,
+       dots: true
+     }
+
+   }, {
+
+     breakpoint: 300,
+     settings: "unslick" // destroys slick
+
+   }]
+});
+
+// On swipe event
+$('.slide1').on('swipe', function(event, slick, direction) {
+  console.log(direction);
+  // left
+});
+ 
+// On edge hit
+$('.slide2').on('edge', function(event, slick, direction) {
+  console.log('edge was hit')
+});
+ 
+// On before slide change
+$('.slide3').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+  console.log(nextSlide);
+});
+
+</script>

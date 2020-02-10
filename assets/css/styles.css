@@ -1,0 +1,69 @@
+/* Text */
+
+h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    background: -webkit-linear-gradient(.1turn, #b47b00, #1b1b1b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.imageMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+}
+.bodyText {
+    font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    font-weight: 500;
+    line-height: 1.7;
+    flex-flow: row nowrap;
+    padding: .5rem 0rem;
+}
+.siteContainer {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding: 2rem;
+}
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 6rem;
+    padding: 1rem 0rem;
+}
+.logo {
+    width: 300px;
+    height: 60px;
+}
+.bodyContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 100%;
+}
+.bodyLeft {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column nowrap;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: center;
+}
+.bodyRight {
+    flex: 0 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    height: 100%;
+    justify-content: flex-start;
+    align-content: center;
+}
